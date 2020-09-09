@@ -1,11 +1,11 @@
 \beamer@sectionintoc {1}{Fast Multipole Methods (FMMs)}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Motivation}{4}{0}{1}
-\beamer@subsectionintoc {1}{2}{Analytic FMM}{5}{0}{1}
-\beamer@subsectionintoc {1}{3}{Kernel Independent FMM}{6}{0}{1}
-\beamer@sectionintoc {2}{PyExaFMM}{7}{0}{2}
-\beamer@subsectionintoc {2}{1}{Motivation}{8}{0}{2}
-\beamer@subsectionintoc {2}{2}{Goals}{9}{0}{2}
-\beamer@subsectionintoc {2}{3}{Outcomes}{10}{0}{2}
-\beamer@sectionintoc {3}{Research Context}{11}{0}{3}
-\beamer@subsectionintoc {3}{1}{Modern Architectures}{12}{0}{3}
-\beamer@subsectionintoc {3}{2}{Low-Rank Compression}{13}{0}{3}
+\beamer@subsectionintoc {1}{2}{Analytic FMM}{8}{0}{1}
+\beamer@subsectionintoc {1}{3}{Kernel Independent FMM}{17}{0}{1}
+\beamer@sectionintoc {2}{PyExaFMM}{25}{0}{2}
+\beamer@subsectionintoc {2}{1}{Motivation}{26}{0}{2}
+\beamer@subsectionintoc {2}{2}{Goals}{27}{0}{2}
+\beamer@subsectionintoc {2}{3}{Outcomes}{28}{0}{2}
+\beamer@sectionintoc {3}{Research Context}{33}{0}{3}
+\beamer@subsectionintoc {3}{1}{Modern Architectures}{34}{0}{3}
+\beamer@subsectionintoc {3}{2}{Randomised SVD Compression}{35}{0}{3}
