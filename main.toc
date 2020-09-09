@@ -6,6 +6,6 @@
 \beamer@subsectionintoc {2}{1}{Motivation}{26}{0}{2}
 \beamer@subsectionintoc {2}{2}{Goals}{27}{0}{2}
 \beamer@subsectionintoc {2}{3}{Outcomes}{28}{0}{2}
-\beamer@sectionintoc {3}{Research Context}{33}{0}{3}
-\beamer@subsectionintoc {3}{1}{Modern Architectures}{34}{0}{3}
-\beamer@subsectionintoc {3}{2}{Randomised SVD Compression}{35}{0}{3}
+\beamer@sectionintoc {3}{Research Context}{39}{0}{3}
+\beamer@subsectionintoc {3}{1}{Modern Architectures}{40}{0}{3}
+\beamer@subsectionintoc {3}{2}{Randomised SVD Compression}{41}{0}{3}

@@ -1,5 +1,8 @@
 \begin{thebibliography}{1}
 
+\bibitem{mahout}
+Apache mahout - distributed linear algebra.
+
 \bibitem{Greengard:1987:JCP}
 L~Greengard and V~Rokhlin.
 \newblock A fast algorithm for particle simulations.
@@ -9,6 +12,22 @@ L~Greengard and V~Rokhlin.
 Denis~Zorin Lexing~Ying, George~Biros.
 \newblock A kernel-independent adaptive fast multipole algorithm in two and
   three dimensions.
-\newblock 196(2):591--626, 2004.
+\newblock {\em Journal of Computational Physics}, 196(2):591--626, 2004.
+
+\bibitem{Malhotra:2015:CCP}
+Dhairya Malhotra and George Biros.
+\newblock Pvfmm: A parallel kernel independent fmm for particle and volume
+  potentials.
+\newblock {\em Communications in Computational Physics}, 18(3):808–830, 2015.
+
+\bibitem{Halko:2011:SIAM}
+Per-Gunnar~Martinsson Nathan~Halko and Joel Tropp.
+\newblock Finding structure with randomness: Probabilistic algorithms for
+  constructing approximate matrix decompositions.
+\newblock {\em SIAM Review}, 53:217--288, 01 2011.
+
+\bibitem{exafmm}
+Lorena A.~Barba Rio~Yokota.
+\newblock Exafmm user's manual, 2011.
 
 \end{thebibliography}
