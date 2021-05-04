@@ -1,11 +1,63 @@
 \section{Software Design}
 
-\subsection{(Adequately) Separating Concerns}
-\subsection{It's All About the Data}
-\subsection{Grappling With the Interpreter}
+\subsection{Separating Concerns}
 
-\begin{splitframe}{0.5}{0.5}{Split Frame Title}
-{this text is on the left side (changeable size 0.5 linewidth)}
-{this text is on the right side (changeable size 0.5 linewidth)}
-this text is in the middle
-\end{splitframe}
+\begin{frame}
+    \frametitle{Separating Concerns}
+    \begin{itemize}
+        \item Separate trees into their own module as a dependency - AdaptOctree
+        \item Separate precomputations into script, with CLI for interactive programming
+        \item Minimal API, consists of a single object containing FMM loop and required data
+        \item Separate compute `backend' (e.g. choice between Numba, Cython etc) and `frontend' consisting of the API
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Separating Concerns}
+    AdaptOctree is:
+    \begin{itemize}
+        \item Accelerated with Numba
+        \item Tree construction is multithreaded, balancing and interaction list computation are single-threaded
+        \item Benchmark: 1e6 particles distributed randomly, build time - $244 \pm 6$ ms, balance time - $97.5 \pm 3$ ms, interaction lists (slow) - $5.81 \pm 0.07$s
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Separating Concerns}
+    We use a single HDF5 file to store:
+    \begin{itemize}
+        \item Precomputed FMM operators
+        \item Precomputed tree stored as a single vector, and tree parameters (physical center, radius etc)
+        \item Precomputed index pointers tying together tree index and particle indices
+        \item Precomputed interaction lists
+        \item Benchmark: 1e6 randomly distributed particles, order 5 multipole expansion, order 6 local expansion, max 100 particles per node, target rank 1 in SVD, takes 9s.
+    \end{itemize}
+\end{frame}
+
+\subsection{Designing Around Data}
+
+\begin{frame}
+    \frametitle{Designing Around Data}
+    Avoiding array creation/destruction leads to use of index pointers (linking indices between two arrays) e.g. between array of tree nodes, and their corresponding particles.
+    \begin{itemize}
+        \item Prioritise simple data structures, arrays
+        \item Avoid sets and dicts if possible, these are partially supported by Numba - but add complications in terms of allowed return types, instatiation time
+        \item All computational methods stripped down to bare loops to help Numba, and operator in place on data - looks UnPythonic and more C-like.
+    \end{itemize}
+\end{frame}
+
+\begin{scriptsize}
+\begin{frame}
+    \frametitle{Designing Around Data}
+    Numba Gotchas
+    \begin{itemize}
+        \item Numba threading on the face of it simple: range $\rightarrow$ prange for a given for loop, picks up backend (TBB, OMP etc).
+        \item Can lead to oversubscription of threads (silently) killing performance
+        \item JIT'ing doesn't change allocation cost, so have to be careful to operate in place, this then feels like you are programming to an (unspecified) framework!
+        \item Sometimes multithreading doesn't work as expected, especially when performing recuctions - rewriting to ensure that all operations are in place may help (i.e. avoiding allocations within prange loop).
+        \item Numba works `too well' - fails silently, and always produces output!
+    \end{itemize}
+\end{frame}
+\end{scriptsize}
+

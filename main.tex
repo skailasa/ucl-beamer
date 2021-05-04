@@ -49,6 +49,14 @@
 \setbeamercolor{date in head/foot}{fg=black}
 \setbeamercolor{section in toc}{fg=black}
 \setbeamercolor{subsection in toc}{fg=black}
+
+
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+\setbeamerfont{bibliography item}{size=\tiny}
+\setbeamerfont{bibliography entry author}{size=\tiny}
+\setbeamerfont{bibliography entry title}{size=\tiny}
+\setbeamerfont{bibliography entry location}{size=\tiny}
+\setbeamerfont{bibliography entry note}{size=\tiny}
 %%setting up some useful slide creation commands
 %split slide
 \newenvironment{splitframe}[5]
@@ -87,5 +95,5 @@
 \subfile{sec1}
 \subfile{sec2}
 \subfile{sec3}
-
+\subfile{references}
 \end{document}

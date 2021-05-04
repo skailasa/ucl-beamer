@@ -3,6 +3,41 @@
 \subsection{Language Bottlenecks for Speed}
 
 \begin{frame}
-\frametitle{Sample frame title}
-This is a text in the first frame. This is a text in the first frame. This is a text in the first frame.
+\frametitle{Is Numba Up To It?}
+
+Problem: Laplace Kernel applied to interactions between 20,000 particles to find Gram Matrix
+\begin{itemize}
+    \item Numba: $\sim$ 296ms
+    \item Rust: $\sim$ 155ms
+\end{itemize}
+
+So at first glance, yes - Numba appears to be useful.
+\end{frame}
+
+\begin{frame}
+\frametitle{Is Numba Up To It?}
+    Important caveats for benchmark,
+    \begin{itemize}
+        \item Numba targeting all CPUs via prange operator
+        \item Data is already arranged `nicely'
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Language Bottlenecks For Speed}
+    \begin{itemize}
+        \item Native Python objects are slow for our purposes, with important implications for data access
+        \item Python's numeric libraries (Numpy/Numba) etc haven't focussed on distributing data as much as computation. There are moves in this direction (Legate)
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Language Bottlenecks For Speed}
+    Problems faced by PyExaFMM:
+    \begin{itemize}
+        \item How do we store tree efficiently if we want to avoid native PyObjects?
+        \item How do we access precomputed operators and coordinate data without dictionaries, or access to pointers?
+        \item How can we accelerate computations on the tree structure?
+    \end{itemize}
 \end{frame}
