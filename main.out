@@ -1,4 +1,10 @@
-\BOOKMARK [2][]{Outline0.1}{Separation of Concerns}{}% 1
-\BOOKMARK [3][]{Outline0.1.1.4}{Sample subsection}{Outline0.1}% 2
-\BOOKMARK [2][]{Outline0.2}{Next section}{}% 3
-\BOOKMARK [3][]{Outline0.2.1.6}{Next subsection}{Outline0.2}% 4
+\BOOKMARK [2][]{Outline0.1}{Fast Python}{}% 1
+\BOOKMARK [3][]{Outline0.1.1.4}{Is Numba Up To It?}{Outline0.1}% 2
+\BOOKMARK [3][]{Outline0.1.2.4}{Language Bottlenecks for Speed}{Outline0.1}% 3
+\BOOKMARK [2][]{Outline0.2}{Software Design}{}% 4
+\BOOKMARK [3][]{Outline0.2.1.6}{\(Adequately\) Separating Concerns}{Outline0.2}% 5
+\BOOKMARK [3][]{Outline0.2.2.6}{It's All About the Data}{Outline0.2}% 6
+\BOOKMARK [3][]{Outline0.2.3.6}{Grappling With the Interpreter}{Outline0.2}% 7
+\BOOKMARK [2][]{Outline0.3}{Accelerating M2L}{}% 8
+\BOOKMARK [3][]{Outline0.3.1.8}{Compression with Randomised SVD}{Outline0.3}% 9
+\BOOKMARK [3][]{Outline0.3.2.8}{Storing Unique Interactions}{Outline0.3}% 10

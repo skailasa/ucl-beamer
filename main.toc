@@ -1,4 +1,10 @@
-\beamer@sectionintoc {1}{Separation of Concerns}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Sample subsection}{4}{0}{1}
-\beamer@sectionintoc {2}{Next section}{5}{0}{2}
-\beamer@subsectionintoc {2}{1}{Next subsection}{6}{0}{2}
+\beamer@sectionintoc {1}{Fast Python}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Is Numba Up To It?}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Language Bottlenecks for Speed}{4}{0}{1}
+\beamer@sectionintoc {2}{Software Design}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{(Adequately) Separating Concerns}{6}{0}{2}
+\beamer@subsectionintoc {2}{2}{It's All About the Data}{6}{0}{2}
+\beamer@subsectionintoc {2}{3}{Grappling With the Interpreter}{6}{0}{2}
+\beamer@sectionintoc {3}{Accelerating M2L}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{Compression with Randomised SVD}{8}{0}{3}
+\beamer@subsectionintoc {3}{2}{Storing Unique Interactions}{8}{0}{3}
