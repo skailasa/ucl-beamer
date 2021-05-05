@@ -1,10 +1,10 @@
 \beamer@sectionintoc {1}{Fast Python}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Is Numba Up To It?}{4}{0}{1}
 \beamer@subsectionintoc {1}{2}{Language Bottlenecks for Speed}{4}{0}{1}
-\beamer@sectionintoc {2}{Software Design}{8}{0}{2}
-\beamer@subsectionintoc {2}{1}{Separating Concerns}{9}{0}{2}
-\beamer@subsectionintoc {2}{2}{Designing Around Data}{12}{0}{2}
-\beamer@sectionintoc {3}{Accelerating M2L}{14}{0}{3}
-\beamer@subsectionintoc {3}{1}{Randomised SVD Recap}{16}{0}{3}
-\beamer@subsectionintoc {3}{2}{Compressing the M2L Gram Matrix Implicitly}{18}{0}{3}
-\beamer@subsectionintoc {3}{3}{Unexpected Problems}{19}{0}{3}
+\beamer@sectionintoc {2}{Software Design}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{Separating Concerns}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{Designing Around Data}{13}{0}{2}
+\beamer@sectionintoc {3}{Accelerating M2L}{15}{0}{3}
+\beamer@subsectionintoc {3}{1}{Randomised SVD Recap}{17}{0}{3}
+\beamer@subsectionintoc {3}{2}{Compressing the M2L Gram Matrix Implicitly}{19}{0}{3}
+\beamer@subsectionintoc {3}{3}{Unexpected Problems}{20}{0}{3}

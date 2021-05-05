@@ -41,3 +41,15 @@ So at first glance, yes - Numba appears to be useful.
         \item How can we accelerate computations on the tree structure?
     \end{itemize}
 \end{frame}
+
+
+\begin{frame}
+    \frametitle{Language Bottlenecks For Speed}
+    Laplace Problem Benchmark: 1e6 randomly distributed points, max 100 particles per node, order 5 multipole expansions and order 6 local expansions, with M2L compression rank of 1.
+
+    \begin{itemize}
+        \item FMM takes 15s on my i7 processor.
+        \item Precomputations of the tree and operators, accelerated with GPU, takes 9s, with my NVidia Quadro RTX-3000 GPU.
+    \end{itemize}
+
+\end{frame}
