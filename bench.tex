@@ -1,19 +1,36 @@
 \section{Implementation and Benchmarks}
 
-\subsection{1. Parallel Sorting Algorithm}
 
 \begin{frame}
-    \cite{Sundar2013}
+    \frametitle{1. Software}
+    Available at \href{https://github.com/skailasa/distributed-trees}{github.com/skailasa/distributed-trees}
+    \begin{enumerate}
+        \item Currently only uses sample sort for parallel sort, and balancing not yet implemented.
+        \item Local sort using Rust's native implementation.
+        \item Fully unit tested.
+    \end{enumerate}
+
+    TODO:
+    \begin{enumerate}
+        \item Implement and test HykSort, and whether it matters for our problem sizes.
+        \item Morton keys are represented as vec of structs for clarity, though would be preferable to represent them as a struct of arrays for speed.
+        \item Add balancing algorithm.
+        \item Add API for higher level codes, i.e. easy access to interaction lists etc.
+        \item Measure strong and weak scaling on cluster.
+    \end{enumerate}
 \end{frame}
 
-\subsection{2. Software Design}
 
 \begin{frame}
-    foo
-\end{frame}
+    \frametitle{2. (Local) Benchmarks}
+    Tested on my 6 core i7 laptop.
 
-\subsection{3. (Some) Benchmarks}
+    \begin{enumerate}
+        \item 6e6 randomly distributed particles (1e6 per core), ncrit=150, max depth=7.
+        \item Unbalanced tree with 260688 leaf nodes.
+        \item Runtime: 2.41 seconds. Peak Memory Usage: 1.9 GB.
+    \end{enumerate}
 
-\begin{frame}
-    bar
+    Interesting comparison, single node C++ implementation in ExaFMM-T, current state of the art, accelerated with OpenMP, for same problem has a runtime of 3.94 seconds with peak memory usage of 1.6 GB.
+
 \end{frame}

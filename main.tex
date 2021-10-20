@@ -14,18 +14,14 @@
 
 
 %Information to be included in the title page:
-\title{Distributed Trees with Rust and MPI}
+\title{Distributed Octrees with Rust and MPI}
 \author{Srinath Kailasa}
 \institute{Department of Mathematics\\University College London}
+\titlegraphic{\includegraphics[width=3.5cm]{assets/logo}}
 
 \date{\today}
 %Logo in every slide
 %Contents before every section's starting slide
-\logo{%
-  \makebox[0.98\paperwidth]{
-    \includegraphics[width=\paperwidth]{assets/banner.eps}%
-  }
-}
 
 \AtBeginSection[]
 {
@@ -34,6 +30,18 @@
     \tableofcontents[currentsection]
   \end{frame}
 }
+
+\hypersetup{colorlinks,
+citecolor=blue,
+linkcolor=.,
+menucolor=white,
+filecolor=pink,
+anchorcolor=yellow
+}
+% Number figures
+\setbeamertemplate{caption}[numbered]
+% Number bibliography
+\setbeamertemplate{bibliography item}{\insertbiblabel}
 % shape, colour of item, nested item bullets in itemize only
 \setbeamertemplate{itemize item}[square] \setbeamercolor{itemize item}{bg=black}
 \setbeamertemplate{itemize subitem}[circle] \setbeamercolor{itemize subitem}{fg=green}

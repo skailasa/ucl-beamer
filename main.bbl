@@ -1,8 +1,33 @@
 \begin{thebibliography}{1}
 
+\bibitem{Malhotra2016}
+D.~Malhotra and G.~Biros, ``{Algorithm 967: A Distributed-Memory Fast Multipole
+  Method for Volume Potentials},'' {\em ACM Trans. Math. Softw}, vol.~43, 2016.
+
+\bibitem{Isaac}
+T.~Isaac, C.~Burstedde, and O.~Ghattas, ``{Low-Cost Parallel Algorithms for 2:1
+  Octree Balance},''
+
+\bibitem{Lashuk2009}
+I.~Lashuk, A.~Chandramowlishwaran, H.~Langston, T.-A. Nguyen, R.~Sampath,
+  A.~Shringarpure, R.~Vuduc, L.~Ying, D.~Zorin, and G.~Biros, ``{A massively
+  parallel adaptive fast-multipole method on heterogeneous architectures},''
+  2009.
+
 \bibitem{Sundar2013}
 H.~Sundar, D.~Malhotra, and G.~Biros, ``{HykSort: A new variant of hypercube
   quicksort on distributed memory architectures},'' {\em Proceedings of the
   International Conference on Supercomputing}, pp.~293--302, 2013.
+
+\bibitem{Sundar2007}
+H.~Sundar, R.~S. Sampath, and G.~Biros, ``{Bottom-up construction and 2:1
+  balance refinement of linear octrees in parallel},'' {\em SIAM Journal on
+  Scientific Computing}, vol.~30, no.~5, pp.~2675--2708, 2007.
+
+\bibitem{Suh2020}
+H.~Suh and T.~Isaac, ``{Evaluation of a minimally synchronous algorithm for 2:1
+  octree balance},'' {\em International Conference for High Performance
+  Computing, Networking, Storage and Analysis, SC}, vol.~2020-Novem,
+  no.~Section VI, 2020.
 
 \end{thebibliography}
