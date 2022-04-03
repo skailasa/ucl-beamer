@@ -8,20 +8,20 @@
 \usepackage{subfiles}
 \usepackage{url}
 \usepackage{amssymb}
+\usepackage{verbdef}% http://ctan.org/pkg/verbdef
+\verbdef{\vtext}{verb text}
+\usepackage{cprotect}% http://ctan.org/pkg/cprotect
+
 
 %Information to be included in the title page:
 \title{Scientific Computing With Rust}
 \author{Srinath Kailasa}
 \institute{Department of Mathematics\\University College London}
+\titlegraphic{\includegraphics[width=3.5cm]{assets/logo}}
 
 \date{\today}
 %Logo in every slide
 %Contents before every section's starting slide
-\logo{%
-  \makebox[0.98\paperwidth]{
-    \includegraphics[width=\paperwidth]{assets/banner.eps}%
-  }
-}
 
 \AtBeginSection[]
 {
@@ -30,13 +30,25 @@
     \tableofcontents[currentsection]
   \end{frame}
 }
+
+\hypersetup{colorlinks,
+citecolor=blue,
+linkcolor=.,
+menucolor=white,
+filecolor=pink,
+anchorcolor=yellow
+}
+% Number figures
+\setbeamertemplate{caption}[numbered]
+% Number bibliography
+\setbeamertemplate{bibliography item}{\insertbiblabel}
 % shape, colour of item, nested item bullets in itemize only
 \setbeamertemplate{itemize item}[square] \setbeamercolor{itemize item}{bg=black}
 \setbeamertemplate{itemize subitem}[circle] \setbeamercolor{itemize subitem}{fg=green}
 \setbeamertemplate{itemize subsubitem}[triangle] \setbeamercolor{itemize subsubitem}{fg=red}
 % font size of nested and nested-within-nested bulltes in both itemize and enumerate
 % options are \tiny, \small, \scriptsize, \normalsize, \footnotesize, \large, \Large, \LARGE, \huge and \Huge
-\setbeamerfont{itemize/enumerate subbody}{size=\scriptsize} 
+\setbeamerfont{itemize/enumerate subbody}{size=\scriptsize}
 \setbeamerfont{itemize/enumerate subsubbody}{size=\scriptsize}
 \setbeamercolor{frametitle}{fg=black}
 \setbeamercolor{title}{fg=black}
@@ -80,8 +92,8 @@
 \tableofcontents
 \end{frame}
 
-\subfile{sec1}
-
-\subfile{sec2}
+\subfile{algorithms}
+\subfile{bench}
+\subfile{references}
 
 \end{document}

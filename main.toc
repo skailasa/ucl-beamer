@@ -1,4 +1,5 @@
-\beamer@sectionintoc {1}{Sample Section}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Sample subsection}{4}{0}{1}
-\beamer@sectionintoc {2}{Next section}{5}{0}{2}
-\beamer@subsectionintoc {2}{1}{Next subsection}{6}{0}{2}
+\beamer@sectionintoc {1}{Algorithms}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{\input main-1.cpt\relax }{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{\input main-2.cpt\relax }{10}{0}{1}
+\beamer@subsectionintoc {1}{3}{3. Parallel Sorting Algorithm}{16}{0}{1}
+\beamer@sectionintoc {2}{Implementation and Benchmarks}{20}{0}{2}
