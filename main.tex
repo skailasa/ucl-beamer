@@ -23,13 +23,13 @@
 %Logo in every slide
 %Contents before every section's starting slide
 
-% \AtBeginSection[]
-% {
-%   \begin{frame}
-%     \frametitle{Table of Contents}
-%     \tableofcontents[currentsection]
-%   \end{frame}
-% }
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
 
 \hypersetup{colorlinks,
 citecolor=blue,
@@ -83,7 +83,7 @@ anchorcolor=yellow
     \end{frame}
     }
 
-    
+
 \begin{document}
 
 \frame{\titlepage}
@@ -94,8 +94,10 @@ anchorcolor=yellow
 \end{frame}
 
 \subfile{overview}
-% \subfile{algorithms}
-% \subfile{bench}
-% \subfile{references}
+\subfile{software_for_science}
+\subfile{research_directions}
+\subfile{live_demo}
+\subfile{conclusion}
+\subfile{references}
 
 \end{document}
