@@ -1,14 +1,48 @@
 \section{Current Research Directions}
 
 \begin{frame}
-    \frametitle{A Splash of PDEs}
+    \frametitle{A Splash of Differential Equations}
+
+    What is an \textit{\textbf{Ordinary Differential Equation}}?
+
+    \vline
+
+    Imposition of a relationship between functions of a independent single variable and its derivatives.
+
+    \vline
+
+    e.g. Newton's Second Law of Motion (in 1 Dimension)
+
+    \begin{equation}
+        m \frac{d^2x}{dt^2} = F(x(t))
+    \end{equation}
+
 \end{frame}
+
 
 
 \begin{frame}
-    \frametitle{FEM}
-\end{frame}
+    \frametitle{A Splash of Differential Equations}
 
+    What is a \textit{\textbf{Partial Differential Equation}}?
+
+    \vline
+
+    Imposition of a relationship between functions of a multiple independent variables and their derivatives.
+
+    \vline
+
+    e.g. The Heat Equation (in 3D Cartesian Coordinates, $\Delta = \frac{d^2}{dx^2} + \frac{d^2}{dy^2} + \frac{d^2}{dz^2}$)
+
+    \begin{equation}
+        \frac{du}{dt} = \Delta u
+    \end{equation}
+
+    \vline
+
+    Where $u(x, y, z, t)$.
+
+\end{frame}
 
 \begin{frame}
     \frametitle{BEM}
@@ -31,4 +65,6 @@
 
 \begin{frame}
     \frametitle{Rusty Fast Solvers Project}
+    \includegraphics[width=0.95\linewidth]{assets/rfs.png}
+    \captionof*{figure}{ \scriptsize https://github.com/rusty-fast-solvers}
 \end{frame}
