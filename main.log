@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.4)  18 APR 2022 11:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.4)  18 APR 2022 11:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1121,7 +1121,7 @@ Package pdftex.def Info: assets/bem.pdf  used on input line 176.
  <./assets/bem.pdf>] [23
 
 ]
-<assets/three_step.png, id=721, 1463.4675pt x 1222.5675pt>
+<assets/three_step.png, id=775, 1463.4675pt x 1222.5675pt>
 File: assets/three_step.png Graphic file (type png)
 <use assets/three_step.png>
 Package pdftex.def Info: assets/three_step.png  used on input line 198.
@@ -1133,7 +1133,7 @@ Overfull \vbox (11.43633pt too high) detected at line 198
 [24
 
  <./assets/three_step.png>]
-<assets/ifmm.png, id=748, 849.1725pt x 448.67625pt>
+<assets/ifmm.png, id=802, 849.1725pt x 448.67625pt>
 File: assets/ifmm.png Graphic file (type png)
 <use assets/ifmm.png>
 Package pdftex.def Info: assets/ifmm.png  used on input line 206.
@@ -1141,7 +1141,7 @@ Package pdftex.def Info: assets/ifmm.png  used on input line 206.
  [25
 
  <./assets/ifmm.png>]
-<assets/rfs.png, id=777, 1500.60625pt x 615.29875pt>
+<assets/rfs.png, id=832, 1500.60625pt x 615.29875pt>
 File: assets/rfs.png Graphic file (type png)
 <use assets/rfs.png>
 Package pdftex.def Info: assets/rfs.png  used on input line 212.
@@ -1200,10 +1200,10 @@ t/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (30 pages, 2459061 bytes).
+Output written on main.pdf (30 pages, 2465655 bytes).
 PDF statistics:
- 955 PDF objects out of 1000 (max. 8388607)
- 860 compressed objects within 9 object streams
+ 1009 PDF objects out of 1200 (max. 8388607)
+ 896 compressed objects within 9 object streams
  65 named destinations out of 1000 (max. 500000)
  145 words of extra memory for PDF output out of 10000 (max. 10000000)
 
