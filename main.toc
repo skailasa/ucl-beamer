@@ -1,5 +1,4 @@
 \beamer@sectionintoc {1}{Overview}{3}{0}{1}
 \beamer@sectionintoc {2}{Expressing Science with Software}{6}{0}{2}
 \beamer@sectionintoc {3}{Current Research Directions}{13}{0}{3}
-\beamer@sectionintoc {4}{Maturin Demo of Python+Rust Project}{21}{0}{4}
-\beamer@sectionintoc {5}{Concluding Remarks}{22}{0}{5}
+\beamer@sectionintoc {4}{Concluding Remarks}{26}{0}{4}
