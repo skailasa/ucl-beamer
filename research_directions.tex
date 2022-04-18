@@ -157,6 +157,42 @@
 \end{frame}
 
 \begin{frame}
+    \frametitle{Laplace Interior Boundary Value Problem IV}
+
+        Approximate with $N$ constant elements, with a midpoint value.
+
+        \begin{equation}
+            \begin{aligned}
+                & \lambda(\xi, \eta)\phi(\xi, \eta) = \\
+                & \sum_{k=1}^N  \overline{\phi(x, y)}^{(k)} \int_{\partial \Omega} \frac{\partial}{\partial n} (\Phi(x, y; \xi, \eta)) ds(x,y) \\
+                &- \overline{\frac{\partial}{\partial n}(\phi(x, y))}^{(k)}  \int_{\partial \Omega} \Phi(x, y; \xi, \eta)  ds(x, y)
+            \end{aligned}
+        \end{equation}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Laplace Interior Boundary Value Problem V}
+    \centering \includegraphics[width=0.5\linewidth]{assets/bem.pdf}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Laplace Interior Boundary Value Problem VI}
+
+    Final Matrix Vector product (matvec) relating points on boundary, to solution in interior of the form,
+
+    \begin{equation}
+        Ax = b
+    \end{equation}
+
+    Where $A$ is the coefficient matrix, $x$ is the boundary data and $b$ is the solution.
+
+    \begin{enumerate}
+        \item $O(N^2)$ - $N$ elements.
+        \item Poor scaling!
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
     \frametitle{Fast Multipole Methods}
     \includegraphics[width=\linewidth]{assets/three_step.png}
 \end{frame}
