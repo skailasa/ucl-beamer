@@ -156,8 +156,14 @@
     \end{equation}
 \end{frame}
 
+
 \begin{frame}
     \frametitle{Laplace Interior Boundary Value Problem IV}
+    \centering \includegraphics[width=0.5\linewidth]{assets/bem.pdf}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Laplace Interior Boundary Value Problem V}
 
         Approximate with $N$ constant elements, with a midpoint value.
 
@@ -168,11 +174,6 @@
                 &- \overline{\frac{\partial}{\partial n}(\phi(x, y))}^{(k)}  \int_{\partial \Omega} \Phi(x, y; \xi, \eta)  ds(x, y)
             \end{aligned}
         \end{equation}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Laplace Interior Boundary Value Problem V}
-    \centering \includegraphics[width=0.5\linewidth]{assets/bem.pdf}
 \end{frame}
 
 \begin{frame}
@@ -187,8 +188,8 @@
     Where $A$ is the coefficient matrix, $x$ is the boundary data and $b$ is the solution.
 
     \begin{enumerate}
-        \item $O(N^2)$ - $N$ elements.
-        \item Poor scaling!
+        \item $O(N^2)$ scaling with $N$ elements.
+        \item Each matrix element also involves calculating horrible maths.
     \end{enumerate}
 \end{frame}
 
@@ -225,5 +226,20 @@
         \item \color{red} Rusty FMM \color{black} - Fast Multipole Method.
         \item \color{red} Rusty Inverse \color{black} - Fast Direct Solvers.
     \end{enumerate}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Rusty Fast Solvers Project III}
+
+    Rusty Tree is the most complete work item, with full Python bindings.
+
+    \hspace*{5pt}
+
+    It's a distributed octree implementation, parallelized with MPI.
+
+    \hspace*{5pt}
+
+    https://github.com/rusty-fast-solvers/rusty-tree
 
 \end{frame}
