@@ -1,0 +1,46 @@
+\section{Fast Algorithms}
+
+\begin{frame}
+    \frametitle{Motivation}
+
+    \begin{enumerate}
+        \item solving PDE as BIE leads to small, dense matrices.
+        \item Benefits -> for unbounded problems, integrate over fixed domain, however main tradeoff are dense matrices.
+        \item BIE $\rightarrow$ so called fast algorithms, accelerated application and inversion of system matrices that arise upon discretization (Galerkin, Nystrom etc)
+        \item 
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    Problem setting for BIE of Helmholtz scattering in exterior.
+\end{frame}
+
+\begin{frame}
+    \frametitle{History}
+    Timeline of fast algorithms, beginning with FMM and latest FDS methods
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{FMM - an $\mathcal{O}(N)$ matvec}
+
+    Brief overview of FMM and its underlying operational principle in its analytic form.
+\end{frame}
+
+\begin{frame}
+    \frametitle{From Analytic to Algebraic Fast algorithms}
+    Drawbacks of analytic FMM, and analytic fast algorithms. Give sketch of semi-analytic methods, and what might be accomplished by a fully algebraic method.
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Algebraic Fast Algorithms for Matrix Inversion}
+    Fast direct solvers, overview of what they are trying to accomplish, and of course the major pros and cons.
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Summary}
+    Summarise the motivation for fast algorithms, and briefly discuss their other applications outside of integral equations.
+\end{frame}
+

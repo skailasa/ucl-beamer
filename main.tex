@@ -15,10 +15,16 @@
 
 
 %Information to be included in the title page:
-\title{Scientific Computing With Rust}
-\author{Srinath Kailasa}
-\institute{Department of Mathematics\\University College London}
-\titlegraphic{\includegraphics[width=3.5cm]{assets/logo}}
+\title{Towards a Fast Direct Solver for Maxwell Scattering}
+\author{Srinath Kailasa, Manas Rachh}
+\author[shortname]{Srinath Kailasa \textsuperscript{1,2} \and Manas Rachh \inst{2}}
+\institute[shortinst]{\textsuperscript{1} Department of Mathematics, University College London \and \inst{2} Centre for Computational Mathematics, Flatiron Institute}
+
+\titlegraphic{
+    \includegraphics[height=1.3cm]{assets/logo.png}
+    \hspace{2cm}
+    \includegraphics[height=1cm]{assets/flatiron_logo.png}
+}
 
 \date{\today}
 %Logo in every slide
@@ -94,11 +100,11 @@ anchorcolor=yellow
 \tableofcontents
 \end{frame}
 
-\subfile{overview}
-\subfile{software_for_science}
-\subfile{research_directions}
-\subfile{maturin}
+\subfile{background}
+\subfile{fast_algorithms}
+\subfile{fast_direct_solvers}
+\subfile{future_directions}
 \subfile{conclusion}
-% \subfile{references}
+\subfile{references}
 
 \end{document}
