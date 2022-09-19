@@ -88,21 +88,56 @@
 
 \end{frame}
 
+\begin{frame}
+    \frametitle{Intuition Behind Fast Solvers I}
+        \begin{figure}
+            \includegraphics[width=\textwidth]{assets/octree_example.pdf}
+            \caption*{Sources evenly spaced on the surface of a `wiggly torus'}
+        \end{figure}
+\end{frame}
 
 \begin{frame}
-    \frametitle{From Analytic to Algebraic Fast algorithms}
-    Drawbacks of analytic FMM, and analytic fast algorithms. Give sketch of semi-analytic methods, and what might be accomplished by a fully algebraic method.
+    \frametitle{Intuition Behind Fast Solvers II}
+        \begin{figure}
+            \includegraphics[width=0.7\textwidth]{assets/well_separated.png}
+            \caption*{Two `well separated' quadtree boxes (Minden et. al 2017)}
+        \end{figure}
+
+
 \end{frame}
 
 
 \begin{frame}
-    \frametitle{Algebraic Fast Algorithms for Matrix Inversion}
-    Fast direct solvers, overview of what they are trying to accomplish, and of course the major pros and cons.
+    \frametitle{From Analytic to Algebraic Fast Algorithms}
+
+    \begin{figure}
+        \includegraphics[width=\textwidth]{assets/analytical_algebraic.png}
+        \caption*{Compute/Memory trade-off between analytical and algebraic fast-algorithms, (Yokota et. al 2016)}
+    \end{figure}
+
 \end{frame}
 
 
 \begin{frame}
-    \frametitle{Summary}
-    Summarise the motivation for fast algorithms, and briefly discuss their other applications outside of integral equations.
+    \frametitle{Fast Direct Solvers for Matrix Inversion}
+
+    Aim to invert dense matrices that arise from discretisations where low-rank approximation applies faster than $O(N^3)$. In $O(N)$ of we can.
+
+    \hspace{0.5pt}
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item Low rank assumption fails for high-frequency Helmholtz.
+                \item Rank scaling even worse in 2D and 3D problems.
+                \item Most approaches have been algebraic.
+                \item Our approach is also algebraic, with some niceties, that help us tackle a (low-frequency) 3D Helmholtz scattering problem.
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \includegraphics[width=\textwidth]{assets/moon.jpg}
+        \end{column}
+    \end{columns}
 \end{frame}
+
 
