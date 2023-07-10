@@ -1,4 +1,2 @@
 \beamer@sectionintoc {1}{Overview}{3}{0}{1}
-\beamer@sectionintoc {2}{Fast Algorithms}{5}{0}{2}
-\beamer@sectionintoc {3}{Fast Direct Solvers}{17}{0}{3}
-\beamer@sectionintoc {4}{Future Directions}{33}{0}{4}
+\beamer@sectionintoc {2}{Future Directions}{5}{0}{2}
